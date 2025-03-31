@@ -14,7 +14,8 @@
             "cwd": "${workspaceRoot}",
             "preLaunchTask": "Cargo Build (debug)",
             "runToEntryPoint": "main",
-            "executable": "./target/thumbv7m-none-eabi/debug/test0",
+            
+            "executable": "./target/thumbv7em-none-eabi/debug/test0",
             /* Run `cargo build --example hello` and uncomment this line to run semi-hosting example */
             //"executable": "./target/thumbv7m-none-eabi/debug/examples/hello",
             "cpu": "cortex-m3",
@@ -29,10 +30,10 @@
             "cwd": "${workspaceRoot}",
             "preLaunchTask": "Cargo Build (debug)",
             "runToEntryPoint": "main",
-            "executable": "./target/thumbv7em-none-eabihf/debug/test0",
+            "executable": "./target/thumbv7em-none-eabi/debug/test0",
             /* Run `cargo build --example itm` and uncomment this line to run itm example */
             // "executable": "./target/thumbv7em-none-eabihf/debug/examples/itm",
-            "device": "STM32F303VCT6",
+            "device": "STM32F303K8T6",
             "configFiles": [
                 "interface/stlink-v2-1.cfg",
                 "target/stm32f3x.cfg"
@@ -46,7 +47,7 @@
                 "decoders": [
                     { "type": "console", "label": "ITM", "port": 0 }
                 ]
-            }
+            },
         }
     ]
 }
